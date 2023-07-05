@@ -3,10 +3,176 @@ $color-letra: yellow;
 $segundo-color-letra: white;
 $border-color:yellow;
 $myFont: arial;
+$color-fondo: black;
+$color-border:#f7b731;
+$color-letra3:#fff;
+$color-letra2:#ffeb69;
 
 
+// $dark-theme: true !default;
+$primary-color: #333 !default;
+$accent-color: #f9f0b7!default;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.cabezador{
+   
+    color: $color-letra2;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    // background-color:$color-fondo;
+    figure {
+        margin-right: 20px;
+        max-width: 100%;
+         img {
+            width: 20%;
+           
+          }
+    }
+}
+   .btn{
+    background-color: $color-border;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover{
+        border: 2px solid $color-border;
+        background-color:transparent ;
+        color: $color-letra2;
+        transform: translateY(-5px);
+        box-shadow: 0px 10px 20px 2px rgba(229, 188, 7, 0.7);
+    }
+  }
+  .burger-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2rem;
+    height: 2rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  
+   .burger-icon {
+      display: block;
+      width: 1.5rem;
+      height: 0.25rem;
+      background-color: $color-border;
+      border-radius: 10px;
+      transition: transform 0.3s ease-in-out;
+  
+      &:nth-child(1) {
+        transform-origin: top center;
+      }
+  
+      &:nth-child(2) {
+        transform-origin: center;
+      }
+  
+      &:nth-child(3) {
+        transform-origin: bottom center;
+      }
+  
+      &.open:nth-child(1) {
+        transform: rotate(45deg);
+      }
+  
+      &.open:nth-child(2) {
+        opacity: 0;
+      }
+  
+      &.open:nth-child(3) {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .navegador{
+    border: 2px solid red; 
+    li{
+    margin-right: 20px;
+    list-style:none;
+      a{
+        color:$color-letra3;
+        text-decoration: none;
+        font-weight: bold;
+      }
+  }
+}
+.main__contenedor {
+    background-image: url('/imagenes/imgprincipale.jpg');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+    .section__main{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 100%;
+        padding: 5%;
+        text-align: left;
+        
+
+    }
+    h1{
+        font-size: 5em;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        text-align: justify;
+        margin-bottom: 20px;
+        color: $color-letra3;
+        
+  }
+}
+.article__principal {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    max-width: 600px;
+    p{
+        font-size: 1.5rem;
+        line-height: 1.5;
+        margin-bottom: 2rem;
+        color: $color-letra3;
+        max-width: 50%;
+    }
+    .button-play {
+       
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      }
+    .btn__play{
+        
+        font-size: 1.2em;
+        padding: 1rem 2rem;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        opacity: 0.5;
+        
+      
+        
+
+    }
+}
+
+// ---------------------OUMAIMA------------------------------
 #precios {
-    height: 90vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     align-items: center;
