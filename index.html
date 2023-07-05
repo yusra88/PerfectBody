@@ -4,14 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>perfect-body</title>
+    <link rel="stylesheet" href="/public/css/main.css">
   </head>
   <body>
     <div class="contenedor">
       <header class="cabezador">
         <figure>
-          <img src="" alt="logo" />
+          <img src="/imagenes/Perfect.png" alt="logo" />
         </figure>
-        <button class="login">Hazte miembro</button>
+        <button class="btn">Hazte miembro</button>
+
         <nav class="navegador">
           <ul>
             <li><a href="#">Contacto</a></li>
@@ -19,7 +21,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#precios">Precios</a></li>
             <li><a href="#planning">Planning</a></li>
-            <li><a href="footer"></a></li>
+            <li><a href="footer">Contancto</a></li>
           </ul>
         </nav>
       </header>
@@ -27,12 +29,14 @@
         <section id="principal" class="section__main">
           <h1 class="title__principal">Perfect Body</h1>
           <article class="article__principal">
-            <button class="btn__play">Play</button>
             <p class="text__article">
               ¡ADRIGYM te trae una experiencia de fitness memorable!
               Rendimiento, cursos innovadores y un diseño sin igual te esperan.
               ADRIGYM promete acelerar y potenciar tu entrenamiento.
             </p>
+            <div class="button-play">
+            <button class="btn btn__play">Play</button>
+            </div>
           </article>
         </section>
       </main>
@@ -63,33 +67,36 @@
         <section id="planning" class="section__container">
           <h2>Planning</h2>
         </section>
+
         <section id="precios" class="section__container">
-          <h2>Precios planes</h2>
-          <article class="box">
-            <h4 class="box_title">PASE DIARIO</h4>
-            <p class="box_precio">150 Dhs / Día</p>
-            <button class="btn_box">Únete</button>
-          </article>
-
-          <article class="box">
-            <h4 class="box_title">SEMANALMENTE</h4>
-            <p class="box_precio">500 Dhs / Semana</p>
-            <button class="btn_box">Únete</button>
-          </article>
-
-          <article class="box">
-            <h4 class="box_title">MENSUAL</h4>
-            <p class="box_precio">1000 Dhs / Mes</p>
-            <button class="btn_box">Únete</button>
-          </article>
-
-          <article class="box">
-            <h4 class="box_title">ANUAL</h4>
-            <p class="box_precio">3000 Dhs / Año</p>
-            <button class="btn_box">Únete</button>
-          </article>
+          <h2 class="title_precios">Precios Planes</h2>
+          <div class="container_article">
+            <article class="box">
+              <h4 class="box_title">PASE DIARIO</h4>
+              <p class="box_precio">10 €/ Día</p>
+              <button class="btn_box">Únete</button>
+            </article>
+  
+            <article class="box">
+              <h4 class="box_title">SEMANAL</h4>
+              <p class="box_precio">24 €/ Semana</p>
+              <button class="btn_box">Únete</button>
+            </article>
+  
+            <article class="box">
+              <h4 class="box_title">MENSUAL</h4>
+              <p class="box_precio">59.99 €/ Mes</p>
+              <button class="btn_box">Únete</button>
+            </article>
+  
+            <article class="box">
+              <h4 class="box_title">ANUAL</h4>
+              <p class="box_precio">400 €/ Año</p>
+              <button class="btn_box">Únete</button>
+            </article>
+          </div>
         </section>
-        
+
         <footer class="myFooter">
           <div class="fter__cont">
               <h5 class="fter_titulo">Perfect Body</h5>
@@ -107,9 +114,9 @@
           </div>
           <div class="fter__cont" id="cont-Redes-Sociales">
               <picture>
-                  <img src="/images/facebook.png" alt="facebook" class="img-redes">
-                  <img src="/images/instagram.png" alt="instagram" class="img-redes">
-                  <img src="/images/youtube.png" alt="youtube" class="img-redes">
+                  <img src="/imagenes/facebook.png" alt="facebook" class="img-redes">
+                  <img src="/imagenes/instagram.png" alt="instagram" class="img-redes">
+                  <img src="/imagenes/youtube.png" alt="youtube" class="img-redes">
               </picture>
           </div>
       </footer>
